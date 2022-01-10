@@ -30,7 +30,7 @@ namespace Core.Module.Users.Infrastructure
         public Task<User> SearchAsyncById(UserId id)
         {
             return (Task<User>)Task.Run(() => {
-                return this.usersInRepository.FirstOrDefault(user => user.id == id);
+                return this.usersInRepository.FirstOrDefault(user => user.id.value == id.value);
             });
         }
 

@@ -11,25 +11,21 @@ namespace Test.Module.Users.Application
     {
         private IUserRepository userRepository;
         private UserFinder userFinderService;
+        private UserCreator userCreatorService;
         private IEventBus eventBus;
 
         public UserFinderTest()
         {
             this.userRepository = new InMemoryUserRepository();
             this.userFinderService = new UserFinder(this.userRepository);
+            this.userCreatorService = new UserCreator(this.userRepository, eventBus);
         }
 
-        [Fact(Skip ="Test not to run")]
-        public void NotToRunTest()
-        { 
-        }
-        
+       
         [Fact]
-        public async Task AlreadyExistingEmailShouldThrowAnException()
+        public async Task NotExistingUserShouldThrowAnException()
         {
-            await this.ExecuteCreateUser();
-
-            await Assert.ThrowsAsync<UserAlreadyExistsException>(() => this.ExecuteCreateUser());
+            await Assert.ThrowsAsync<UserDoesNotExistsException>(() => this.userFinderService.Find("1"));
         }
 
         private async Task ExecuteCreateUser()
@@ -40,11 +36,12 @@ namespace Test.Module.Users.Application
         }
 
         [Fact]
-        public async void AfterUserCreateItShouldBeInTheRepository()
+        public async void ShoulFindExistingUser()
         {
             await this.ExecuteCreateUser();
+            User user = await this.userFinderService.Find("1234");
 
-            Assert.NotNull(await this.userRepository.SearchAsyncByEmail(new UserEmail("amarimon@cloudactivereception.com")));
+            Assert.NotNull(user);
         }
     }
 }

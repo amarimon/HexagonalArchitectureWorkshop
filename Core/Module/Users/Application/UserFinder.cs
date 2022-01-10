@@ -13,9 +13,14 @@ namespace Core.Module.Users.Application
             this.repository = userRepository;
         }
 
-        public async Task Find(string userId)
+        public async Task<User> Find(string userId)
         {
-            await this.repository.SearchAsyncById(new UserId(userId));
+            User user = await this.repository.SearchAsyncById(new UserId(userId));
+
+            if (user == null)
+                throw new UserDoesNotExistsException();
+
+            return user;
         }
     }
 }
