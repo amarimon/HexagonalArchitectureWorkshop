@@ -16,7 +16,7 @@ namespace Test.Module.Users.Application
         public UserFinderTest()
         {
             this.userRepository = new InMemoryUserRepository();
-            this.userCreatorService = new UserCreator(this.userRepository, eventBus);
+            this.userFinderService = new UserFinder(this.userRepository);
         }
 
         [Fact(Skip ="Test not to run")]
