@@ -1,1 +1,7 @@
-obj\
+API/bin/
+API/obj/
+Test/obj/
+Test/bin/
+Core/bin/
+Core/obj/
+
