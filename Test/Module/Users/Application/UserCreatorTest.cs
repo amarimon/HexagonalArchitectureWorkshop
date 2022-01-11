@@ -34,7 +34,7 @@ namespace Test.Module.Users.Application
 
         private async Task ExecuteCreateUser()
         {
-            var request = new CreateUserRequest("1234", "amarimon", "amarimon@cloudactivereception.com", "Demo123456");
+            var request = new CreateUserRequest("1234", "amarimon", "amarimon@cloudactivereception.com", "@password");
 
             await this.userCreatorService.Create(request);
         }

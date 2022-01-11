@@ -1,11 +1,12 @@
-C:\src\amarimon\HexagonalArchitecture\Core\obj\Debug\net5.0\Core.GeneratedMSBuildEditorConfig.editorconfig
-C:\src\amarimon\HexagonalArchitecture\Core\obj\Debug\net5.0\Core.AssemblyInfoInputs.cache
-C:\src\amarimon\HexagonalArchitecture\Core\obj\Debug\net5.0\Core.AssemblyInfo.cs
-C:\src\amarimon\HexagonalArchitecture\Core\obj\Debug\net5.0\Core.csproj.CoreCompileInputs.cache
 C:\src\amarimon\HexagonalArchitecture\Core\bin\Debug\net5.0\Core.deps.json
 C:\src\amarimon\HexagonalArchitecture\Core\bin\Debug\net5.0\Core.dll
 C:\src\amarimon\HexagonalArchitecture\Core\bin\Debug\net5.0\ref\Core.dll
 C:\src\amarimon\HexagonalArchitecture\Core\bin\Debug\net5.0\Core.pdb
+C:\src\amarimon\HexagonalArchitecture\Core\obj\Debug\net5.0\Core.csproj.AssemblyReference.cache
+C:\src\amarimon\HexagonalArchitecture\Core\obj\Debug\net5.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\src\amarimon\HexagonalArchitecture\Core\obj\Debug\net5.0\Core.AssemblyInfoInputs.cache
+C:\src\amarimon\HexagonalArchitecture\Core\obj\Debug\net5.0\Core.AssemblyInfo.cs
+C:\src\amarimon\HexagonalArchitecture\Core\obj\Debug\net5.0\Core.csproj.CoreCompileInputs.cache
 C:\src\amarimon\HexagonalArchitecture\Core\obj\Debug\net5.0\Core.dll
 C:\src\amarimon\HexagonalArchitecture\Core\obj\Debug\net5.0\ref\Core.dll
 C:\src\amarimon\HexagonalArchitecture\Core\obj\Debug\net5.0\Core.pdb

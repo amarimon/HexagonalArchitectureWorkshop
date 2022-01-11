@@ -30,7 +30,7 @@ namespace Test.Module.Users.Application
 
         private async Task ExecuteCreateUser()
         {
-            var request = new CreateUserRequest("1234", "amarimon", "amarimon@cloudactivereception.com", "Demo123456");
+            var request = new CreateUserRequest("1234", "amarimon", "amarimon@cloudactivereception.com", "@password");
 
             await this.userCreatorService.Create(request);
         }
@@ -39,9 +39,13 @@ namespace Test.Module.Users.Application
         public async void ShoulFindExistingUser()
         {
             await this.ExecuteCreateUser();
-            User user = await this.userFinderService.Find("1234");
 
-            Assert.NotNull(user);
+            User existingUser = User.Create(new UserId("1234"), new UserName("amarimon"), new UserEmail("amarimon@cloudactivereception.com"), new UserPassword("@password"));
+
+            User user = await this.userFinderService.Find(existingUser.id.value.ToString());
+
+            //Assert.NotNull(user); <- NO!!!!!
+            Assert.Equal(user, existingUser);
         }
     }
 }
