@@ -4,6 +4,7 @@ using Core.Module.Users.Domain;
 using Core.Module.Users.Infrastructure;
 using System.Threading.Tasks;
 using Xunit;
+using FluentAssertions;
 
 namespace Test.Module.Users.Application
 {
@@ -45,7 +46,18 @@ namespace Test.Module.Users.Application
             User user = await this.userFinderService.Find(existingUser.id.value.ToString());
 
             //Assert.NotNull(user); <- NO!!!!!
-            Assert.Equal(user, existingUser);
+            //Assert.Equal(user, existingUser);
+            //Assert.Same(user, existingUser);
+
+            user.Should().BeEquivalentTo(existingUser);
+        }
+
+        [Fact]
+        public async void PassingEmptyParameterShouldThrowAnException()
+        {
+            System.Func<Task<User>> act = () => this.userFinderService.Find("");
+
+            await act.Should().ThrowAsync<InvalidUserIdException>();
         }
     }
 }
