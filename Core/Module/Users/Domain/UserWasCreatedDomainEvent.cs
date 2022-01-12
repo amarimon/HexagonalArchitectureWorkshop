@@ -3,12 +3,12 @@ using System.Collections.Generic;
 
 namespace Core.Module.Users.Domain
 {
-    sealed class UserCreatedDomainEvent : DomainEvent
+    sealed class UserWasCreatedDomainEvent : DomainEvent
     {
         private string userName { get; }
         private string email { get; }
 
-        public UserCreatedDomainEvent(string userId, string userName, string email, string eventId = null, string occurredOn = null) : base(userId, eventId = null, occurredOn)
+        public UserWasCreatedDomainEvent(string userId, string userName, string email, string eventId = null, string occurredOn = null) : base(userId)
         {
             this.userName = userName;
             this.email = email;
@@ -29,14 +29,14 @@ namespace Core.Module.Users.Domain
             return primitives;
         }
 
-        public override UserCreatedDomainEvent FromPrimitives(
+        public override UserWasCreatedDomainEvent FromPrimitives(
             string aggregateId,
             Dictionary<string, string> body,
             string eventId,
             string occurredOn)
         {
 
-            return new UserCreatedDomainEvent(aggregateId, body.GetValueOrDefault("username"), body.GetValueOrDefault("email"),eventId, occurredOn);
+            return new UserWasCreatedDomainEvent(aggregateId, body.GetValueOrDefault("username"), body.GetValueOrDefault("email"),eventId, occurredOn);
         }
     }
 }
