@@ -5,3 +5,4 @@ Test/bin/
 Core/bin/
 Core/obj/
 Test/bin/Debug/net5.0/Test.dll
+.vs/
