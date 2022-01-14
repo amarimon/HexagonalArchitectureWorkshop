@@ -11,10 +11,11 @@ namespace Test.Module.Users.Domain
             Assert.Throws<InvalidUserNameException>(() => new UserName(""));
         }
 
-        [Fact(Skip = "WTF! Length is valid!")]
+        //[Fact(Skip = "WTF! Length is valid!")]
+        [Fact]
         public void TooLargeUserNameShouldThrowException()
         {
-            Assert.Throws<InvalidUserNameException>(() => new UserName("01234567890"));
+            Assert.Throws<InvalidUserNameException>(() => new UserName("012345678900123456789001234567890012345678900123456789001234567890"));
         }
     }
 }

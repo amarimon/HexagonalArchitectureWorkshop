@@ -21,6 +21,7 @@ namespace Core.Module.Users.Application
                 throw new UserAlreadyExistsException();
 
             User user = User.Create(new UserId(request.id), new UserName(request.userName), new UserEmail(request.email), new UserPassword(request.password));
+            
             await this.repository.SaveAsync(user);
             //await this.eventBusPublisher.Publish(user.PullDomainEvents());
         }
