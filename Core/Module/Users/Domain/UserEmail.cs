@@ -12,10 +12,10 @@ namespace Core.Module.Users.Domain
         private void EnsureIsValid(string value)
         {
             if(string.IsNullOrEmpty(value))
-                throw new InvalidEmailException();
+                throw new InvalidUserEmailException();
 
             if (value.Length > 200)
-                throw new InvalidUserNameException();
+                throw new InvalidUserEmailException();
         }
     }
 }

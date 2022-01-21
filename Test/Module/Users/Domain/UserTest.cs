@@ -5,7 +5,7 @@ using Xunit;
 
 namespace Test.Module.Users.Domain
 {
-    public class UserCreatorTest
+    public class UserTest
     {
         [Fact]
         public void EmptyEmailShouldThrowException()
