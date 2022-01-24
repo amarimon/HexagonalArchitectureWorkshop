@@ -1,6 +1,6 @@
 ﻿using Core.Module.Shared.Domain;
 
-namespace Core.Module.Users.Domain
+namespace Core.Module.Shared.Domain
 {
     public class Email
     {

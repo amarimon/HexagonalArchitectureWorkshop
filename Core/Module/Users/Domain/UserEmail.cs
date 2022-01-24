@@ -4,7 +4,7 @@ namespace Core.Module.Users.Domain
 {
     public class UserEmail : Email
     {
-        public UserEmail(string value) : base(value)
+        public UserEmail(string value): base(value)
         {
             this.EnsureIsValid(value);
         }
@@ -14,7 +14,7 @@ namespace Core.Module.Users.Domain
             if(string.IsNullOrEmpty(value))
                 throw new InvalidUserEmailException();
 
-            if (value.Length > 200)
+            if (value.Length > 100)
                 throw new InvalidUserEmailException();
         }
     }

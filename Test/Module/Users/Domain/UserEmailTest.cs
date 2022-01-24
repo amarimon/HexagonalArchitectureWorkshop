@@ -1,3 +1,4 @@
+using Core.Module.Shared.Domain;
 using Core.Module.Users.Domain;
 using Xunit;
 
@@ -8,13 +9,13 @@ namespace Test.Module.Users.Domain
         [Fact]
         public void EmptyUserEmailShouldThrowException()
         {
-            Assert.Throws<InvalidUserEmailException>(() => new UserEmail(""));
+            Assert.Throws<InvalidEmailException>(() => new UserEmail(""));
         }
 
         [Fact]
         public void MalformedEmailShouldThrowException()
         {
-            Assert.Throws<InvalidUserEmailException>(() => new UserEmail("test&%/.@@email.@email.?"));
+            Assert.Throws<InvalidEmailException>(() => new UserEmail("test&%/.@@email.@email.?"));
         }
 
         [Fact]

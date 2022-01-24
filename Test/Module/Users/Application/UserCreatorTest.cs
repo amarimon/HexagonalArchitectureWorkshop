@@ -2,12 +2,13 @@ using Core.Module.Shared.Domain;
 using Core.Module.Users.Application;
 using Core.Module.Users.Domain;
 using Core.Module.Users.Infrastructure;
+using System;
 using System.Threading.Tasks;
 using Xunit;
 
 namespace Test.Module.Users.Application
 {
-    public class UserCreatorTest
+    public class UserCreatorTest : IDisposable
     {
         private IUserRepository userRepository;
         private UserCreator userCreatorService;
@@ -45,6 +46,13 @@ namespace Test.Module.Users.Application
             await this.ExecuteCreateUser();
 
             Assert.NotNull(await this.userRepository.SearchAsyncByEmail(new UserEmail("amarimon@cloudactivereception.com")));
+        }
+
+        public void Dispose()
+        {
+            //Implementem la interfície IDisposable, pq quan es cridi el dispose faci neteja.
+            //Per exemple, si utilitzessim una db, i un test fallés, podrien quedar dades.
+            //En aquest cas ho posem a mode d'exemple per veure una possiblitat.
         }
     }
 }
