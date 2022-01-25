@@ -12,4 +12,11 @@
     <Folder Include="Module\Shared\Infrastructure\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="coverlet.msbuild" Version="3.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
 </Project>

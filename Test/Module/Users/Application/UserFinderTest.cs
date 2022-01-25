@@ -46,8 +46,8 @@ namespace Test.Module.Users.Application
             User user = await this.userFinderService.Find(existingUser.id.value.ToString());
 
             //Assert.NotNull(user); <- NO!!!!!
-            //Assert.Equal(user, existingUser);
-            //Assert.Same(user, existingUser);
+            //Assert.Equal(user, existingUser); //Mateix objecte utilitzant compare
+            //Assert.Same(user, existingUser); //Mateixa instància
 
             user.Should().BeEquivalentTo(existingUser);
         }
