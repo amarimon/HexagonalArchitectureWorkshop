@@ -1,4 +1,6 @@
-﻿namespace Core.Module.Users.Domain
+﻿using System.Text.RegularExpressions;
+
+namespace Core.Module.Users.Domain
 {
     public class UserName
     {
@@ -16,6 +18,9 @@
                 throw new InvalidUserNameException();
             
             if(value.Length > 40)
+                throw new InvalidUserNameException();
+
+            if (!Regex.IsMatch(value, @"^[a-zA-Z0-9-_]*$", RegexOptions.ECMAScript))
                 throw new InvalidUserNameException();
         }
     }

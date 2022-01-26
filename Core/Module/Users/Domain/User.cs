@@ -5,7 +5,7 @@ namespace Core.Module.Users.Domain
     public sealed class User : AggregateRoot
     {
         public UserId id { get;}
-        public UserName userName { get; }
+        private UserName userName { get; }
         public UserEmail email { get; }
         private UserPassword password { get; set; }
 
