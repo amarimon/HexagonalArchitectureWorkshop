@@ -8,6 +8,9 @@ using FluentAssertions;
 
 namespace Test.Module.Users.Application
 {
+    [Trait("Category", "Unit")]
+    [Trait("Class", nameof(UserFinder))]
+    [Trait("Method", nameof(UserFinder))]
     public class UserFinderTest
     {
         private IUserRepository userRepository;
@@ -21,7 +24,6 @@ namespace Test.Module.Users.Application
             this.userFinderService = new UserFinder(this.userRepository);
             this.userCreatorService = new UserCreator(this.userRepository, eventBus);
         }
-
        
         [Fact]
         public async Task NotExistingUserShouldThrowAnException()

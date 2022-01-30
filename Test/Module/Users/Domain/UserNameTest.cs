@@ -23,5 +23,14 @@ namespace Test.Module.Users.Domain
         {
             Assert.Throws<InvalidUserNameException>(() => new UserName("user name"));
         }
+
+        [Theory]
+        [InlineData("")]
+        [InlineData("012345678900123456789001234567890012345678900123456789001234567890")]
+        [InlineData("user name")]
+        public void InvalidUserNameShouldThrowException(string invalidUsername)
+        {
+            Assert.Throws<InvalidUserNameException>(() => new UserName(invalidUsername));
+        }
     }
 }

@@ -4,6 +4,10 @@ using Xunit;
 
 namespace Test.Module.Users.Domain
 {
+    
+    [Trait("Category", "Unit")]
+    [Trait("Class", nameof(UserEmail))]
+    [Trait("Method", nameof(UserEmail))]
     public class UserEmailTest
     {
         [Fact]

@@ -8,6 +8,9 @@ using Xunit;
 
 namespace Test.Module.Users.Application
 {
+    [Trait("Category", "Unit")]
+    [Trait("Class", nameof(UserCreator))]
+    [Trait("Method", nameof(UserCreator))]
     public class UserCreatorTest : IDisposable
     {
         private IUserRepository userRepository;
@@ -47,6 +50,15 @@ namespace Test.Module.Users.Application
 
             Assert.NotNull(await this.userRepository.SearchAsyncByEmail(new UserEmail("amarimon@cloudactivereception.com")));
         }
+
+        [Fact]
+        public async Task InvalidUserShouldThrowAnException()
+        {
+            await this.ExecuteCreateUser();
+
+            await Assert.ThrowsAsync<UserAlreadyExistsException>(() => this.ExecuteCreateUser());
+        }
+
 
         public void Dispose()
         {
