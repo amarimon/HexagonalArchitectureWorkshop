@@ -39,7 +39,6 @@ namespace API.Controllers
                 UserCreator userCreator = new UserCreator(userRepository, eventBus);
                 await userCreator.Create(request);
 
-
                 return StatusCode(201);
             }
             catch (Exception ex)
