@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Core.Module.Shared.Domain;
+using System;
 using System.Runtime.Serialization;
 
 namespace Core.Module.Users.Domain
 {
     [Serializable]
-    public class InvalidUserIdException : Exception
+    public class InvalidUserIdException : DomainException
     {
         public InvalidUserIdException()
         {

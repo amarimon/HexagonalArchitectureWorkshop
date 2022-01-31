@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Core.Module.Shared.Domain
 {
-    public class InvalidEmailException : Exception
+    public class InvalidEmailException : DomainException
     {
     }
 }

@@ -51,12 +51,14 @@ namespace Test.Module.Users.Application
             Assert.NotNull(await this.userRepository.SearchAsyncByEmail(new UserEmail("amarimon@cloudactivereception.com")));
         }
 
-        [Fact]
-        public async Task InvalidUserShouldThrowAnException()
-        {
-            await this.ExecuteCreateUser();
 
-            await Assert.ThrowsAsync<UserAlreadyExistsException>(() => this.ExecuteCreateUser());
+        [Theory]
+        [ClassData(typeof(CreateInvalidUserRequestGenerator))]
+        public async Task InvalidUserShouldThrowAnException(CreateUserRequest request)
+        {
+            //Ull, any
+            await Assert.ThrowsAnyAsync<DomainException>(() => this.userCreatorService.Create(request));
+            //await Assert.ThrowsAsync<InvalidEmailException>(() => this.userCreatorService.Create(request));
         }
 
 
