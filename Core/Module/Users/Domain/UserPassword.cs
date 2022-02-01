@@ -17,6 +17,8 @@
 
             if (value.Length > 20)
                 throw new InvalidUserNameException();
+
+            //TODO : Password strength validation
         }
     }
 }
