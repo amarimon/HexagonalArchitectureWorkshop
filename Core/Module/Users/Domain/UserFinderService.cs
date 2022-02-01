@@ -2,22 +2,23 @@
 using Core.Module.Users.Domain;
 using System.Threading.Tasks;
 
-namespace Core.Module.Users.Application
+namespace Core.Module.Users.Domain
 {
-    public sealed class UserFinder
+    public sealed class UserFinderService
     {
         private IUserRepository repository { get; set; }
-        private UserFinderService userFinderService { get; set; }
 
-        public UserFinder(IUserRepository userRepository)
+        public UserFinderService(IUserRepository userRepository)
         {
             this.repository = userRepository;
-            this.userFinderService = new UserFinderService(repository);
         }
 
         public async Task<User> Find(string userId)
         {
-            User user = await this.userFinderService.Find(userId);
+            User user = await this.repository.SearchAsyncById(new UserId(userId));
+
+            if (user == null)
+                throw new UserDoesNotExistsException();
 
             return user;
         }
