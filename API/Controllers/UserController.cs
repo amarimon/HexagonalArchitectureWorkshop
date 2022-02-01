@@ -2,11 +2,8 @@
 using Core.Module.Users.Application;
 using Core.Module.Users.Domain;
 using Core.Module.Users.Infrastructure;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace API.Controllers
@@ -19,10 +16,10 @@ namespace API.Controllers
 
         public UserController()
         {
-            userRepository = new InMemoryUserRepository();
+            this.userRepository = new InMemoryUserRepository();
         }
 
-        // GET: User/Create
+        // POST: User
         /// <summary>
         /// Create an user
         /// </summary>
@@ -32,7 +29,7 @@ namespace API.Controllers
         [Route("v1/User")]
         [ProducesResponseType(201)]
         [ProducesResponseType(400)]
-        public async Task<IActionResult> Create(CreateUserRequest request)
+        public async Task<IActionResult> Create([FromBody]CreateUserRequest request)
         {
             try
             {
@@ -43,7 +40,31 @@ namespace API.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(400);
+                return StatusCode(400, ex);
+            }
+        }
+
+        // GET: User
+        /// <summary>
+        /// Get an user by Id
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("v1/User/{userId}")]
+        [ProducesResponseType(201)]
+        [ProducesResponseType(400)]
+        public async Task<IActionResult> Create(String userId)
+        {
+            try
+            {
+                UserFinder userFinder = new UserFinder(userRepository);
+                User user = await userFinder.Find(userId);
+                return StatusCode(200, user);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(404);
             }
         }
     }

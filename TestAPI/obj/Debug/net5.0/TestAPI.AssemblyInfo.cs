@@ -11,6 +11,8 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\src\\amarimon\\HexagonalArchitecture\\API", "API.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\src\\amarimon\\HexagonalArchitecture\\Core", "Core.csproj", "0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("TestAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

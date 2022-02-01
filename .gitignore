@@ -2,7 +2,10 @@ API/bin/
 API/obj/
 Test/obj/
 Test/bin/
+TestAPI/obj/
+TestAPI/bin/
 Core/bin/
 Core/obj/
 Test/bin/Debug/net5.0/Test.dll
+TestAPI/bin/Debug/net5.0/Test.dll
 .vs/
