@@ -54,12 +54,13 @@ namespace API.Controllers
         [Route("v1/User/{userId}")]
         [ProducesResponseType(201)]
         [ProducesResponseType(400)]
-        public async Task<IActionResult> Create(String userId)
+        public async Task<IActionResult> Get(String userId)
         {
             try
             {
                 UserFinder userFinder = new UserFinder(userRepository);
                 User user = await userFinder.Find(userId);
+
                 return StatusCode(200, user);
             }
             catch (Exception ex)
