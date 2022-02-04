@@ -4,14 +4,85 @@
     "C:\\src\\amarimon\\HexagonalArchitecture\\TestAPI\\TestAPI.csproj": {}
   },
   "projects": {
-    "C:\\src\\amarimon\\HexagonalArchitecture\\TestAPI\\TestAPI.csproj": {
+    "C:\\src\\amarimon\\HexagonalArchitecture\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\src\\amarimon\\HexagonalArchitecture\\TestAPI\\TestAPI.csproj",
-        "projectName": "TestAPI",
-        "projectPath": "C:\\src\\amarimon\\HexagonalArchitecture\\TestAPI\\TestAPI.csproj",
+        "projectUniqueName": "C:\\src\\amarimon\\HexagonalArchitecture\\API\\API.csproj",
+        "projectName": "API",
+        "projectPath": "C:\\src\\amarimon\\HexagonalArchitecture\\API\\API.csproj",
         "packagesPath": "C:\\Users\\ama\\.nuget\\packages\\",
-        "outputPath": "C:\\src\\amarimon\\HexagonalArchitecture\\TestAPI\\obj\\",
+        "outputPath": "C:\\src\\amarimon\\HexagonalArchitecture\\API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ama\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\src\\amarimon\\HexagonalArchitecture\\Core\\Core.csproj": {
+                "projectPath": "C:\\src\\amarimon\\HexagonalArchitecture\\Core\\Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.10.14, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\src\\amarimon\\HexagonalArchitecture\\Core\\Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\src\\amarimon\\HexagonalArchitecture\\Core\\Core.csproj",
+        "projectName": "Core",
+        "projectPath": "C:\\src\\amarimon\\HexagonalArchitecture\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\ama\\.nuget\\packages\\",
+        "outputPath": "C:\\src\\amarimon\\HexagonalArchitecture\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ama\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,9 +111,87 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "coverlet.msbuild": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\src\\amarimon\\HexagonalArchitecture\\TestAPI\\TestAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\src\\amarimon\\HexagonalArchitecture\\TestAPI\\TestAPI.csproj",
+        "projectName": "TestAPI",
+        "projectPath": "C:\\src\\amarimon\\HexagonalArchitecture\\TestAPI\\TestAPI.csproj",
+        "packagesPath": "C:\\Users\\ama\\.nuget\\packages\\",
+        "outputPath": "C:\\src\\amarimon\\HexagonalArchitecture\\TestAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ama\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\src\\amarimon\\HexagonalArchitecture\\API\\API.csproj": {
+                "projectPath": "C:\\src\\amarimon\\HexagonalArchitecture\\API\\API.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[5.0.13, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.9.4, )"
+            },
+            "SpecFlow.Tools.MsBuild.Generation": {
+              "target": "Package",
+              "version": "[3.9.40, )"
+            },
+            "SpecFlow.xUnit": {
+              "target": "Package",
+              "version": "[3.9.40, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
