@@ -9,3 +9,7 @@ Core/obj/
 Test/bin/Debug/net5.0/Test.dll
 TestAPI/bin/Debug/net5.0/Test.dll
 .vs/
+Test/coverage.cobertura.xml
+TestAPI/obj/project.assets.json
+TestAPI/obj/project.nuget.cache
+*.cache
