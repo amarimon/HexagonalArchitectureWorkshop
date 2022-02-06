@@ -11,7 +11,7 @@ namespace Test.Module.Users.Application
             new object[] { new CreateUserRequest("1234", "amarimon", "", "@password") },
             new object[] { new CreateUserRequest("1234", "amarimon", "012345678900123456789001234567890012345678900123456789001234567890", "@password") },
             new object[] { new CreateUserRequest("1234", "amarimon", "user name", "@password") },
-            new object[] { new CreateUserRequest("1234", "amarimon", "amarimon@cloudactivereception.com", "@password") },
+            //new object[] { new CreateUserRequest("1234", "amarimon", "amarimon@cloudactivereception.com", "@password") },
             new object[] { new CreateUserRequest("1234", "amarimon", "", "@password") },
             new object[] { new CreateUserRequest("1234", "amarimon", "test&%/.@@email.@email.?", "@password") },
             new object[] { new CreateUserRequest("1234", "amarimon", "012345678900123456789001234567890012345678900123456789001234567890012345678900123456789001234567890012345678900123456789001234567890@email.com", "@password") }

@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<coverage line-rate="0.6338" branch-rate="0.7142000000000001" version="1.9" timestamp="1643036705" lines-covered="161" lines-valid="254" branches-covered="20" branches-valid="28">
+<coverage line-rate="0.6111" branch-rate="0.7333" version="1.9" timestamp="1643755351" lines-covered="176" lines-valid="288" branches-covered="22" branches-valid="30">
   <sources>
     <source>C:\src\amarimon\HexagonalArchitecture\Core\Module\</source>
   </sources>
   <packages>
-    <package name="Core" line-rate="0.6338" branch-rate="0.7142000000000001" complexity="95">
+    <package name="Core" line-rate="0.6111" branch-rate="0.7333" complexity="108">
       <classes>
         <class name="Core.Module.Users.Infrastructure.InMemoryUserRepository" filename="Users\Infrastructure\InMemoryUserRepository.cs" line-rate="0.6363" branch-rate="0.5" complexity="10">
           <methods>
@@ -75,10 +75,10 @@
             </method>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="13" hits="5" branch="False" />
-                <line number="14" hits="5" branch="False" />
-                <line number="15" hits="5" branch="False" />
-                <line number="16" hits="5" branch="False" />
+                <line number="13" hits="11" branch="False" />
+                <line number="14" hits="11" branch="False" />
+                <line number="15" hits="11" branch="False" />
+                <line number="16" hits="11" branch="False" />
               </lines>
             </method>
           </methods>
@@ -128,10 +128,10 @@
             <line number="53" hits="0" branch="False" />
             <line number="54" hits="0" branch="False" />
             <line number="55" hits="0" branch="False" />
-            <line number="13" hits="5" branch="False" />
-            <line number="14" hits="5" branch="False" />
-            <line number="15" hits="5" branch="False" />
-            <line number="16" hits="5" branch="False" />
+            <line number="13" hits="11" branch="False" />
+            <line number="14" hits="11" branch="False" />
+            <line number="15" hits="11" branch="False" />
+            <line number="16" hits="11" branch="False" />
           </lines>
         </class>
         <class name="Core.Module.Users.Infrastructure.PostgresqlUserRepository" filename="Users\Infrastructure\PostgresqlUserRepository.cs" line-rate="0" branch-rate="1" complexity="6">
@@ -194,150 +194,150 @@
           <methods>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="9" hits="1" branch="False" />
-                <line number="10" hits="1" branch="False" />
-                <line number="11" hits="1" branch="False" />
+                <line number="10" hits="2" branch="False" />
+                <line number="11" hits="2" branch="False" />
+                <line number="12" hits="2" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(System.String)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="13" hits="0" branch="False" />
                 <line number="14" hits="0" branch="False" />
                 <line number="15" hits="0" branch="False" />
+                <line number="16" hits="0" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(System.String,System.Exception)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="17" hits="0" branch="False" />
                 <line number="18" hits="0" branch="False" />
                 <line number="19" hits="0" branch="False" />
+                <line number="20" hits="0" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="21" hits="0" branch="False" />
                 <line number="22" hits="0" branch="False" />
                 <line number="23" hits="0" branch="False" />
+                <line number="24" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="9" hits="1" branch="False" />
-            <line number="10" hits="1" branch="False" />
-            <line number="11" hits="1" branch="False" />
-            <line number="13" hits="0" branch="False" />
+            <line number="10" hits="2" branch="False" />
+            <line number="11" hits="2" branch="False" />
+            <line number="12" hits="2" branch="False" />
             <line number="14" hits="0" branch="False" />
             <line number="15" hits="0" branch="False" />
-            <line number="17" hits="0" branch="False" />
+            <line number="16" hits="0" branch="False" />
             <line number="18" hits="0" branch="False" />
             <line number="19" hits="0" branch="False" />
-            <line number="21" hits="0" branch="False" />
+            <line number="20" hits="0" branch="False" />
             <line number="22" hits="0" branch="False" />
             <line number="23" hits="0" branch="False" />
+            <line number="24" hits="0" branch="False" />
           </lines>
         </class>
         <class name="Core.Module.Users.Domain.InvalidUserIdException" filename="Users\Domain\InvalidUserIdException.cs" line-rate="0.25" branch-rate="1" complexity="4">
           <methods>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="9" hits="1" branch="False" />
                 <line number="10" hits="1" branch="False" />
                 <line number="11" hits="1" branch="False" />
+                <line number="12" hits="1" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(System.String)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="13" hits="0" branch="False" />
                 <line number="14" hits="0" branch="False" />
                 <line number="15" hits="0" branch="False" />
+                <line number="16" hits="0" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(System.String,System.Exception)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="17" hits="0" branch="False" />
                 <line number="18" hits="0" branch="False" />
                 <line number="19" hits="0" branch="False" />
+                <line number="20" hits="0" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="21" hits="0" branch="False" />
                 <line number="22" hits="0" branch="False" />
                 <line number="23" hits="0" branch="False" />
+                <line number="24" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="9" hits="1" branch="False" />
             <line number="10" hits="1" branch="False" />
             <line number="11" hits="1" branch="False" />
-            <line number="13" hits="0" branch="False" />
+            <line number="12" hits="1" branch="False" />
             <line number="14" hits="0" branch="False" />
             <line number="15" hits="0" branch="False" />
-            <line number="17" hits="0" branch="False" />
+            <line number="16" hits="0" branch="False" />
             <line number="18" hits="0" branch="False" />
             <line number="19" hits="0" branch="False" />
-            <line number="21" hits="0" branch="False" />
+            <line number="20" hits="0" branch="False" />
             <line number="22" hits="0" branch="False" />
             <line number="23" hits="0" branch="False" />
+            <line number="24" hits="0" branch="False" />
           </lines>
         </class>
         <class name="Core.Module.Users.Domain.InvalidUserNameException" filename="Users\Domain\InvalidUserNameException.cs" line-rate="0.25" branch-rate="1" complexity="4">
           <methods>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="9" hits="2" branch="False" />
-                <line number="10" hits="2" branch="False" />
-                <line number="11" hits="2" branch="False" />
+                <line number="10" hits="6" branch="False" />
+                <line number="11" hits="6" branch="False" />
+                <line number="12" hits="6" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(System.String)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="13" hits="0" branch="False" />
                 <line number="14" hits="0" branch="False" />
                 <line number="15" hits="0" branch="False" />
+                <line number="16" hits="0" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(System.String,System.Exception)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="17" hits="0" branch="False" />
                 <line number="18" hits="0" branch="False" />
                 <line number="19" hits="0" branch="False" />
+                <line number="20" hits="0" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="21" hits="0" branch="False" />
                 <line number="22" hits="0" branch="False" />
                 <line number="23" hits="0" branch="False" />
+                <line number="24" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="9" hits="2" branch="False" />
-            <line number="10" hits="2" branch="False" />
-            <line number="11" hits="2" branch="False" />
-            <line number="13" hits="0" branch="False" />
+            <line number="10" hits="6" branch="False" />
+            <line number="11" hits="6" branch="False" />
+            <line number="12" hits="6" branch="False" />
             <line number="14" hits="0" branch="False" />
             <line number="15" hits="0" branch="False" />
-            <line number="17" hits="0" branch="False" />
+            <line number="16" hits="0" branch="False" />
             <line number="18" hits="0" branch="False" />
             <line number="19" hits="0" branch="False" />
-            <line number="21" hits="0" branch="False" />
+            <line number="20" hits="0" branch="False" />
             <line number="22" hits="0" branch="False" />
             <line number="23" hits="0" branch="False" />
+            <line number="24" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Core.Module.Users.Domain.User" filename="Users\Domain\User.cs" line-rate="1" branch-rate="1" complexity="6">
+        <class name="Core.Module.Users.Domain.User" filename="Users\Domain\User.cs" line-rate="0.9375" branch-rate="1" complexity="6">
           <methods>
             <method name="get_id" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
                 <line number="7" hits="4" branch="False" />
               </lines>
             </method>
-            <method name="get_userName" signature="()" line-rate="1" branch-rate="1" complexity="1">
+            <method name="get_userName" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="8" hits="2" branch="False" />
+                <line number="8" hits="0" branch="False" />
               </lines>
             </method>
             <method name="get_email" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -373,7 +373,7 @@
           </methods>
           <lines>
             <line number="7" hits="4" branch="False" />
-            <line number="8" hits="2" branch="False" />
+            <line number="8" hits="0" branch="False" />
             <line number="9" hits="4" branch="False" />
             <line number="10" hits="4" branch="False" />
             <line number="21" hits="4" branch="False" />
@@ -486,50 +486,104 @@
           <methods>
             <method name="EnsureIsValid" signature="(System.String)" line-rate="0.8332999999999999" branch-rate="0.75" complexity="4">
               <lines>
-                <line number="13" hits="10" branch="False" />
-                <line number="14" hits="10" branch="True" condition-coverage="50% (1/2)">
+                <line number="13" hits="11" branch="False" />
+                <line number="14" hits="11" branch="True" condition-coverage="50% (1/2)">
                   <conditions>
                     <condition number="9" type="jump" coverage="50%" />
                   </conditions>
                 </line>
                 <line number="15" hits="0" branch="False" />
-                <line number="17" hits="10" branch="True" condition-coverage="100% (2/2)">
+                <line number="17" hits="11" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="29" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="18" hits="1" branch="False" />
+                <line number="18" hits="2" branch="False" />
                 <line number="19" hits="9" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(System.String)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="7" hits="14" branch="False" />
-                <line number="8" hits="10" branch="False" />
-                <line number="9" hits="10" branch="False" />
+                <line number="7" hits="20" branch="False" />
+                <line number="8" hits="11" branch="False" />
+                <line number="9" hits="11" branch="False" />
                 <line number="10" hits="9" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="13" hits="10" branch="False" />
-            <line number="14" hits="10" branch="True" condition-coverage="50% (1/2)">
+            <line number="13" hits="11" branch="False" />
+            <line number="14" hits="11" branch="True" condition-coverage="50% (1/2)">
               <conditions>
                 <condition number="9" type="jump" coverage="50%" />
               </conditions>
             </line>
             <line number="15" hits="0" branch="False" />
-            <line number="17" hits="10" branch="True" condition-coverage="100% (2/2)">
+            <line number="17" hits="11" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="29" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="18" hits="1" branch="False" />
+            <line number="18" hits="2" branch="False" />
             <line number="19" hits="9" branch="False" />
-            <line number="7" hits="14" branch="False" />
-            <line number="8" hits="10" branch="False" />
-            <line number="9" hits="10" branch="False" />
+            <line number="7" hits="20" branch="False" />
+            <line number="8" hits="11" branch="False" />
+            <line number="9" hits="11" branch="False" />
             <line number="10" hits="9" branch="False" />
+          </lines>
+        </class>
+        <class name="Core.Module.Users.Domain.UserFinderService" filename="Users\Domain\UserFinderService.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="get_repository" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(Core.Module.Users.Domain.IUserRepository)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="3" branch="False" />
+                <line number="12" hits="3" branch="False" />
+                <line number="13" hits="3" branch="False" />
+                <line number="14" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="6" branch="False" />
+            <line number="11" hits="3" branch="False" />
+            <line number="12" hits="3" branch="False" />
+            <line number="13" hits="3" branch="False" />
+            <line number="14" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="Core.Module.Users.Domain.UserFinderService/&lt;Find&gt;d__5" filename="Users\Domain\UserFinderService.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="17" hits="3" branch="False" />
+                <line number="18" hits="3" branch="False" />
+                <line number="20" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="169" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="21" hits="1" branch="False" />
+                <line number="23" hits="1" branch="False" />
+                <line number="24" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="3" branch="False" />
+            <line number="18" hits="3" branch="False" />
+            <line number="20" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="169" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="21" hits="1" branch="False" />
+            <line number="23" hits="1" branch="False" />
+            <line number="24" hits="1" branch="False" />
           </lines>
         </class>
         <class name="Core.Module.Users.Domain.UserId" filename="Users\Domain\UserId.cs" line-rate="1" branch-rate="1" complexity="3">
@@ -574,62 +628,74 @@
             <line number="14" hits="8" branch="False" />
           </lines>
         </class>
-        <class name="Core.Module.Users.Domain.UserName" filename="Users\Domain\UserName.cs" line-rate="1" branch-rate="1" complexity="6">
+        <class name="Core.Module.Users.Domain.UserName" filename="Users\Domain\UserName.cs" line-rate="1" branch-rate="1" complexity="8">
           <methods>
             <method name="get_value" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="5" hits="6" branch="False" />
+                <line number="7" hits="4" branch="False" />
               </lines>
             </method>
-            <method name="EnsureIsValid" signature="(System.String)" line-rate="1" branch-rate="1" complexity="4">
+            <method name="EnsureIsValid" signature="(System.String)" line-rate="1" branch-rate="1" complexity="6">
               <lines>
-                <line number="14" hits="8" branch="False" />
-                <line number="15" hits="8" branch="True" condition-coverage="100% (2/2)">
+                <line number="16" hits="12" branch="False" />
+                <line number="17" hits="12" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="9" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="16" hits="1" branch="False" />
-                <line number="18" hits="7" branch="True" condition-coverage="100% (2/2)">
+                <line number="18" hits="2" branch="False" />
+                <line number="20" hits="10" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="29" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="19" hits="1" branch="False" />
-                <line number="20" hits="6" branch="False" />
+                <line number="21" hits="2" branch="False" />
+                <line number="23" hits="8" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="58" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="24" hits="2" branch="False" />
+                <line number="25" hits="6" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(System.String)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="7" hits="8" branch="False" />
-                <line number="8" hits="8" branch="False" />
-                <line number="9" hits="8" branch="False" />
-                <line number="10" hits="6" branch="False" />
-                <line number="11" hits="6" branch="False" />
+                <line number="9" hits="12" branch="False" />
+                <line number="10" hits="12" branch="False" />
+                <line number="11" hits="12" branch="False" />
+                <line number="12" hits="6" branch="False" />
+                <line number="13" hits="6" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="5" hits="6" branch="False" />
-            <line number="14" hits="8" branch="False" />
-            <line number="15" hits="8" branch="True" condition-coverage="100% (2/2)">
+            <line number="7" hits="4" branch="False" />
+            <line number="16" hits="12" branch="False" />
+            <line number="17" hits="12" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="9" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="16" hits="1" branch="False" />
-            <line number="18" hits="7" branch="True" condition-coverage="100% (2/2)">
+            <line number="18" hits="2" branch="False" />
+            <line number="20" hits="10" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="29" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="19" hits="1" branch="False" />
-            <line number="20" hits="6" branch="False" />
-            <line number="7" hits="8" branch="False" />
-            <line number="8" hits="8" branch="False" />
-            <line number="9" hits="8" branch="False" />
-            <line number="10" hits="6" branch="False" />
-            <line number="11" hits="6" branch="False" />
+            <line number="21" hits="2" branch="False" />
+            <line number="23" hits="8" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="58" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="24" hits="2" branch="False" />
+            <line number="25" hits="6" branch="False" />
+            <line number="9" hits="12" branch="False" />
+            <line number="10" hits="12" branch="False" />
+            <line number="11" hits="12" branch="False" />
+            <line number="12" hits="6" branch="False" />
+            <line number="13" hits="6" branch="False" />
           </lines>
         </class>
         <class name="Core.Module.Users.Domain.UserPassword" filename="Users\Domain\UserPassword.cs" line-rate="0.75" branch-rate="0.5" complexity="6">
@@ -654,7 +720,7 @@
                   </conditions>
                 </line>
                 <line number="19" hits="0" branch="False" />
-                <line number="20" hits="4" branch="False" />
+                <line number="22" hits="4" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(System.String)" line-rate="1" branch-rate="1" complexity="1">
@@ -682,12 +748,54 @@
               </conditions>
             </line>
             <line number="19" hits="0" branch="False" />
-            <line number="20" hits="4" branch="False" />
+            <line number="22" hits="4" branch="False" />
             <line number="7" hits="4" branch="False" />
             <line number="8" hits="4" branch="False" />
             <line number="9" hits="4" branch="False" />
             <line number="10" hits="4" branch="False" />
             <line number="11" hits="4" branch="False" />
+          </lines>
+        </class>
+        <class name="Core.Module.Users.Domain.UserSearchService" filename="Users\Domain\UserSearchService.cs" line-rate="0" branch-rate="1" complexity="2">
+          <methods>
+            <method name="get_repository" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(Core.Module.Users.Domain.IUserRepository)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="0" branch="False" />
+                <line number="12" hits="0" branch="False" />
+                <line number="13" hits="0" branch="False" />
+                <line number="14" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="0" branch="False" />
+            <line number="11" hits="0" branch="False" />
+            <line number="12" hits="0" branch="False" />
+            <line number="13" hits="0" branch="False" />
+            <line number="14" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="Core.Module.Users.Domain.UserSearchService/&lt;Search&gt;d__5" filename="Users\Domain\UserSearchService.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="0" branch="False" />
+                <line number="18" hits="0" branch="False" />
+                <line number="20" hits="0" branch="False" />
+                <line number="21" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="0" branch="False" />
+            <line number="18" hits="0" branch="False" />
+            <line number="20" hits="0" branch="False" />
+            <line number="21" hits="0" branch="False" />
           </lines>
         </class>
         <class name="Core.Module.Users.Domain.UserWasCreatedDomainEvent" filename="Users\Domain\UserWasCreatedDomainEvent.cs" line-rate="0.2631" branch-rate="1" complexity="6">
@@ -762,88 +870,88 @@
           <methods>
             <method name="get_id" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="5" hits="3" branch="False" />
+                <line number="5" hits="9" branch="False" />
               </lines>
             </method>
             <method name="get_userName" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="6" hits="3" branch="False" />
+                <line number="6" hits="9" branch="False" />
               </lines>
             </method>
             <method name="get_email" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="7" hits="7" branch="False" />
+                <line number="7" hits="19" branch="False" />
               </lines>
             </method>
             <method name="get_password" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="8" hits="7" branch="False" />
+                <line number="8" hits="25" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(System.String,System.String,System.String,System.String)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="10" hits="4" branch="False" />
-                <line number="11" hits="4" branch="False" />
-                <line number="12" hits="4" branch="False" />
-                <line number="13" hits="4" branch="False" />
-                <line number="14" hits="4" branch="False" />
-                <line number="15" hits="4" branch="False" />
-                <line number="16" hits="4" branch="False" />
+                <line number="10" hits="16" branch="False" />
+                <line number="11" hits="16" branch="False" />
+                <line number="12" hits="16" branch="False" />
+                <line number="13" hits="16" branch="False" />
+                <line number="14" hits="16" branch="False" />
+                <line number="15" hits="16" branch="False" />
+                <line number="16" hits="16" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="5" hits="3" branch="False" />
-            <line number="6" hits="3" branch="False" />
-            <line number="7" hits="7" branch="False" />
-            <line number="8" hits="7" branch="False" />
-            <line number="10" hits="4" branch="False" />
-            <line number="11" hits="4" branch="False" />
-            <line number="12" hits="4" branch="False" />
-            <line number="13" hits="4" branch="False" />
-            <line number="14" hits="4" branch="False" />
-            <line number="15" hits="4" branch="False" />
-            <line number="16" hits="4" branch="False" />
+            <line number="5" hits="9" branch="False" />
+            <line number="6" hits="9" branch="False" />
+            <line number="7" hits="19" branch="False" />
+            <line number="8" hits="25" branch="False" />
+            <line number="10" hits="16" branch="False" />
+            <line number="11" hits="16" branch="False" />
+            <line number="12" hits="16" branch="False" />
+            <line number="13" hits="16" branch="False" />
+            <line number="14" hits="16" branch="False" />
+            <line number="15" hits="16" branch="False" />
+            <line number="16" hits="16" branch="False" />
           </lines>
         </class>
         <class name="Core.Module.Users.Application.UserCreator" filename="Users\Application\UserCreator.cs" line-rate="1" branch-rate="1" complexity="3">
           <methods>
             <method name="get_repository" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="9" hits="12" branch="False" />
+                <line number="9" hits="24" branch="False" />
               </lines>
             </method>
             <method name="get_eventBusPublisher" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="10" hits="5" branch="False" />
+                <line number="10" hits="11" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(Core.Module.Users.Domain.IUserRepository,Core.Module.Shared.Domain.IEventBus)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="12" hits="5" branch="False" />
-                <line number="13" hits="5" branch="False" />
-                <line number="14" hits="5" branch="False" />
-                <line number="15" hits="5" branch="False" />
-                <line number="16" hits="5" branch="False" />
+                <line number="12" hits="11" branch="False" />
+                <line number="13" hits="11" branch="False" />
+                <line number="14" hits="11" branch="False" />
+                <line number="15" hits="11" branch="False" />
+                <line number="16" hits="11" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="9" hits="12" branch="False" />
-            <line number="10" hits="5" branch="False" />
-            <line number="12" hits="5" branch="False" />
-            <line number="13" hits="5" branch="False" />
-            <line number="14" hits="5" branch="False" />
-            <line number="15" hits="5" branch="False" />
-            <line number="16" hits="5" branch="False" />
+            <line number="9" hits="24" branch="False" />
+            <line number="10" hits="11" branch="False" />
+            <line number="12" hits="11" branch="False" />
+            <line number="13" hits="11" branch="False" />
+            <line number="14" hits="11" branch="False" />
+            <line number="15" hits="11" branch="False" />
+            <line number="16" hits="11" branch="False" />
           </lines>
         </class>
         <class name="Core.Module.Users.Application.UserCreator/&lt;Create&gt;d__9" filename="Users\Application\UserCreator.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="19" hits="4" branch="False" />
-                <line number="20" hits="4" branch="True" condition-coverage="100% (2/2)">
+                <line number="19" hits="10" branch="False" />
+                <line number="20" hits="10" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="164" type="jump" coverage="100%" />
                   </conditions>
@@ -856,8 +964,8 @@
             </method>
           </methods>
           <lines>
-            <line number="19" hits="4" branch="False" />
-            <line number="20" hits="4" branch="True" condition-coverage="100% (2/2)">
+            <line number="19" hits="10" branch="False" />
+            <line number="20" hits="10" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="164" type="jump" coverage="100%" />
               </conditions>
@@ -868,58 +976,54 @@
             <line number="27" hits="3" branch="False" />
           </lines>
         </class>
-        <class name="Core.Module.Users.Application.UserFinder" filename="Users\Application\UserFinder.cs" line-rate="1" branch-rate="1" complexity="2">
+        <class name="Core.Module.Users.Application.UserFinder" filename="Users\Application\UserFinder.cs" line-rate="1" branch-rate="1" complexity="3">
           <methods>
             <method name="get_repository" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
                 <line number="9" hits="6" branch="False" />
               </lines>
             </method>
+            <method name="get_userFinderService" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="6" branch="False" />
+              </lines>
+            </method>
             <method name=".ctor" signature="(Core.Module.Users.Domain.IUserRepository)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="3" branch="False" />
                 <line number="12" hits="3" branch="False" />
                 <line number="13" hits="3" branch="False" />
                 <line number="14" hits="3" branch="False" />
+                <line number="15" hits="3" branch="False" />
+                <line number="16" hits="3" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
             <line number="9" hits="6" branch="False" />
-            <line number="11" hits="3" branch="False" />
+            <line number="10" hits="6" branch="False" />
             <line number="12" hits="3" branch="False" />
             <line number="13" hits="3" branch="False" />
             <line number="14" hits="3" branch="False" />
+            <line number="15" hits="3" branch="False" />
+            <line number="16" hits="3" branch="False" />
           </lines>
         </class>
-        <class name="Core.Module.Users.Application.UserFinder/&lt;Find&gt;d__5" filename="Users\Application\UserFinder.cs" line-rate="1" branch-rate="1" complexity="2">
+        <class name="Core.Module.Users.Application.UserFinder/&lt;Find&gt;d__9" filename="Users\Application\UserFinder.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
-            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="17" hits="3" branch="False" />
-                <line number="18" hits="3" branch="False" />
-                <line number="20" hits="2" branch="True" condition-coverage="100% (2/2)">
-                  <conditions>
-                    <condition number="169" type="jump" coverage="100%" />
-                  </conditions>
-                </line>
-                <line number="21" hits="1" branch="False" />
+                <line number="19" hits="3" branch="False" />
+                <line number="20" hits="3" branch="False" />
+                <line number="22" hits="1" branch="False" />
                 <line number="23" hits="1" branch="False" />
-                <line number="24" hits="1" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="17" hits="3" branch="False" />
-            <line number="18" hits="3" branch="False" />
-            <line number="20" hits="2" branch="True" condition-coverage="100% (2/2)">
-              <conditions>
-                <condition number="169" type="jump" coverage="100%" />
-              </conditions>
-            </line>
-            <line number="21" hits="1" branch="False" />
+            <line number="19" hits="3" branch="False" />
+            <line number="20" hits="3" branch="False" />
+            <line number="22" hits="1" branch="False" />
             <line number="23" hits="1" branch="False" />
-            <line number="24" hits="1" branch="False" />
           </lines>
         </class>
         <class name="Core.Module.Shared.Domain.AggregateRoot" filename="Shared\Domain\AggregateRoot.cs" line-rate="0.44439999999999996" branch-rate="1" complexity="3">
@@ -1014,6 +1118,52 @@
             <line number="17" hits="4" branch="False" />
           </lines>
         </class>
+        <class name="Core.Module.Shared.Domain.DomainException" filename="Shared\Domain\DomainException.cs" line-rate="0.25" branch-rate="1" complexity="4">
+          <methods>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="18" branch="False" />
+                <line number="9" hits="18" branch="False" />
+                <line number="10" hits="18" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="0" branch="False" />
+                <line number="13" hits="0" branch="False" />
+                <line number="14" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String,System.Exception)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="0" branch="False" />
+                <line number="17" hits="0" branch="False" />
+                <line number="18" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="0" branch="False" />
+                <line number="21" hits="0" branch="False" />
+                <line number="22" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="18" branch="False" />
+            <line number="9" hits="18" branch="False" />
+            <line number="10" hits="18" branch="False" />
+            <line number="12" hits="0" branch="False" />
+            <line number="13" hits="0" branch="False" />
+            <line number="14" hits="0" branch="False" />
+            <line number="16" hits="0" branch="False" />
+            <line number="17" hits="0" branch="False" />
+            <line number="18" hits="0" branch="False" />
+            <line number="20" hits="0" branch="False" />
+            <line number="21" hits="0" branch="False" />
+            <line number="22" hits="0" branch="False" />
+          </lines>
+        </class>
         <class name="Core.Module.Shared.Domain.Email" filename="Shared\Domain\Email.cs" line-rate="1" branch-rate="1" complexity="3">
           <methods>
             <method name="get_value" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -1023,41 +1173,41 @@
             </method>
             <method name="EnsureIsValid" signature="(System.String)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="16" hits="14" branch="False" />
-                <line number="18" hits="14" branch="False" />
-                <line number="19" hits="14" branch="False" />
-                <line number="20" hits="10" branch="False" />
-                <line number="21" hits="4" branch="False" />
-                <line number="22" hits="4" branch="False" />
-                <line number="23" hits="4" branch="False" />
-                <line number="25" hits="10" branch="False" />
+                <line number="16" hits="20" branch="False" />
+                <line number="18" hits="20" branch="False" />
+                <line number="19" hits="20" branch="False" />
+                <line number="20" hits="11" branch="False" />
+                <line number="21" hits="9" branch="False" />
+                <line number="22" hits="9" branch="False" />
+                <line number="23" hits="9" branch="False" />
+                <line number="25" hits="11" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(System.String)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="9" hits="14" branch="False" />
-                <line number="10" hits="14" branch="False" />
-                <line number="11" hits="14" branch="False" />
-                <line number="12" hits="10" branch="False" />
-                <line number="13" hits="10" branch="False" />
+                <line number="9" hits="20" branch="False" />
+                <line number="10" hits="20" branch="False" />
+                <line number="11" hits="20" branch="False" />
+                <line number="12" hits="11" branch="False" />
+                <line number="13" hits="11" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
             <line number="7" hits="10" branch="False" />
-            <line number="16" hits="14" branch="False" />
-            <line number="18" hits="14" branch="False" />
-            <line number="19" hits="14" branch="False" />
-            <line number="20" hits="10" branch="False" />
-            <line number="21" hits="4" branch="False" />
-            <line number="22" hits="4" branch="False" />
-            <line number="23" hits="4" branch="False" />
-            <line number="25" hits="10" branch="False" />
-            <line number="9" hits="14" branch="False" />
-            <line number="10" hits="14" branch="False" />
-            <line number="11" hits="14" branch="False" />
-            <line number="12" hits="10" branch="False" />
-            <line number="13" hits="10" branch="False" />
+            <line number="16" hits="20" branch="False" />
+            <line number="18" hits="20" branch="False" />
+            <line number="19" hits="20" branch="False" />
+            <line number="20" hits="11" branch="False" />
+            <line number="21" hits="9" branch="False" />
+            <line number="22" hits="9" branch="False" />
+            <line number="23" hits="9" branch="False" />
+            <line number="25" hits="11" branch="False" />
+            <line number="9" hits="20" branch="False" />
+            <line number="10" hits="20" branch="False" />
+            <line number="11" hits="20" branch="False" />
+            <line number="12" hits="11" branch="False" />
+            <line number="13" hits="11" branch="False" />
           </lines>
         </class>
       </classes>

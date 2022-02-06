@@ -13,3 +13,5 @@ Test/coverage.cobertura.xml
 TestAPI/obj/project.assets.json
 TestAPI/obj/project.nuget.cache
 *.cache
+TestAPI/obj/project.nuget.cache
+TestAPI/obj/project.nuget.cache
