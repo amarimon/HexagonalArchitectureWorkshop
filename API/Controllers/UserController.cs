@@ -40,7 +40,7 @@ namespace API.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(400, ex);
+                return StatusCode(400);
             }
         }
 
