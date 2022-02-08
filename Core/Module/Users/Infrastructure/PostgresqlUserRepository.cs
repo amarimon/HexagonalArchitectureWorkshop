@@ -1,34 +1,56 @@
 ﻿using Core.Module.Users.Domain;
+using Microsoft.EntityFrameworkCore;
 using System;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Core.Module.Users.Infrastructure
 {
     public class PostgresqlUserRepository : IUserRepository
     {
-        public PostgresqlUserRepository()
-        { 
-        
+        private readonly UserDbContext _context;
+
+        public PostgresqlUserRepository(UserDbContext context) => this._context = context ??
+                                                                      throw new ArgumentNullException(nameof(context));
+
+
+        public async Task DeleteAsync(UserId id)
+        {
+            await this._context
+                .Database
+                .ExecuteSqlRawAsync("DELETE FROM users WHERE id=@p0", id.value)
+                .ConfigureAwait(false);
         }
 
-        public Task DeleteAsync(UserId id)
+        public async Task SaveAsync(User user)
         {
-            throw new NotImplementedException();
+            await this._context.users
+                .AddAsync(user)
+                .ConfigureAwait(false);
         }
 
-        public Task SaveAsync(User user)
+        public async Task<User> SearchAsyncById(UserId id)
         {
-            throw new NotImplementedException();
+            User? user = await this._context
+           .users
+           .Where(e => e.id == id)
+           .Select(e => e)
+           .SingleOrDefaultAsync()
+           .ConfigureAwait(false);
+
+            return user;
         }
 
-        public Task<User> SearchAsyncById(UserId id)
+        public async Task<User> SearchAsyncByEmail(UserEmail email)
         {
-            throw new NotImplementedException();
-        }
+            User? user = await this._context
+           .users
+           .Where(e => e.email == email)
+           .Select(e => e)
+           .SingleOrDefaultAsync()
+           .ConfigureAwait(false);
 
-        public Task<User> SearchAsyncByEmail(UserEmail email)
-        {
-            throw new NotImplementedException();
+            return user;
         }
 
         public void Dispose()
