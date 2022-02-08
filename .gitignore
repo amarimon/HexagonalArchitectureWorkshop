@@ -1,6 +1,8 @@
 API/bin/
 API/obj/
 API/out/
+API/postgres_data/
+API/postgres-data/
 Test/obj/
 Test/bin/
 TestAPI/obj/
@@ -16,3 +18,5 @@ TestAPI/obj/project.nuget.cache
 *.cache
 TestAPI/obj/project.nuget.cache
 TestAPI/obj/project.nuget.cache
+postgres-data/
+postgres_data/
