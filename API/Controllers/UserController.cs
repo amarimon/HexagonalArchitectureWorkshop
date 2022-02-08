@@ -13,10 +13,12 @@ namespace API.Controllers
     {
         private IUserRepository userRepository;
         private IEventBus eventBus;
+        private readonly UserDbContext userDbContext;
 
-        public UserController()
+        public UserController(UserDbContext context)
         {
-            this.userRepository = new InMemoryUserRepository();
+            this.userDbContext = context;
+            this.userRepository = new PostgresqlUserRepository(userDbContext);
         }
 
         // POST: User
