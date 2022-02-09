@@ -9,7 +9,7 @@ services:
     image: workshopapi:latest
     container_name: 'workshop_api_local_testing'
     depends_on:
-      - "postgresdock_image"
+      - "postgres-image"
     build:
       context: .
       dockerfile: ./API/Dockerfile
