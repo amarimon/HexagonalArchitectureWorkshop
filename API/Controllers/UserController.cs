@@ -42,7 +42,7 @@ namespace API.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(400);
+                return StatusCode(400, ex.Message + " " + ex.InnerException + " " + ex.StackTrace);
             }
         }
 
