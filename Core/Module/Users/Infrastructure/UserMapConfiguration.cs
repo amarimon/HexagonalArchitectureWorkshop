@@ -20,10 +20,11 @@ namespace Core.Module.Users.Infrastructure
 
             entityBuilder.ToTable("users");
 
-            entityBuilder.Property(b => b.id)
+            entityBuilder.Property(b => b.userId)
                 .HasConversion(
                     v => v.value,
                     v => new UserId(v.ToString()))
+                .HasColumnName("id")
                 .IsRequired();
 
 
@@ -35,13 +36,13 @@ namespace Core.Module.Users.Infrastructure
                     v => new UserName(v))
                 .HasColumnName("username");
 
-            entityBuilder.Property(x => x.email)
+            entityBuilder.Property(x => x.userEmail)
                 .HasConversion(
                     v => v.value,
                     v => new UserEmail(v))
                 .HasColumnName("mail");
 
-            entityBuilder.Property(x => x.password)
+            entityBuilder.Property(x => x.userPassword)
                  .HasConversion(
                     v => v.value,
                     v => new UserPassword(v))

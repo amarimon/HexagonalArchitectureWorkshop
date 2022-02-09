@@ -45,7 +45,7 @@ namespace Test.Module.Users.Application
 
             User existingUser = User.Create(new UserId("1234"), new UserName("amarimon"), new UserEmail("amarimon@cloudactivereception.com"), new UserPassword("@password"));
 
-            User user = await this.userFinderService.Find(existingUser.id.value.ToString());
+            User user = await this.userFinderService.Find(existingUser.userId.value.ToString());
 
             //Assert.NotNull(user); <- NO!!!!!
             //Assert.Equal(user, existingUser); //Mateix objecte utilitzant compare

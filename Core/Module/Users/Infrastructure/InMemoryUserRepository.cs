@@ -18,7 +18,7 @@ namespace Core.Module.Users.Infrastructure
         public Task DeleteAsync(UserId id)
         {
             return Task.Run(() => {
-                this.usersInRepository.Remove(this.usersInRepository.Single(s => s.id == id));
+                this.usersInRepository.Remove(this.usersInRepository.Single(s => s.userId == id));
             });
         }
 
@@ -30,7 +30,7 @@ namespace Core.Module.Users.Infrastructure
         public Task<User> SearchAsyncById(UserId id)
         {
             return (Task<User>)Task.Run(() => {
-                return this.usersInRepository.FirstOrDefault(user => user.id.value == id.value);
+                return this.usersInRepository.FirstOrDefault(user => user.userId.value == id.value);
             });
         }
 
@@ -38,7 +38,7 @@ namespace Core.Module.Users.Infrastructure
         {
             return (Task<User>)Task.Run(() => {
                 User user = this.usersInRepository.FirstOrDefault(user => 
-                        user.email.value.ToUpper().Equals(email.value.ToUpper(), StringComparison.InvariantCultureIgnoreCase)
+                        user.userEmail.value.ToUpper().Equals(email.value.ToUpper(), StringComparison.InvariantCultureIgnoreCase)
                     );
 
                 return user;

@@ -27,13 +27,15 @@ namespace Core.Module.Users.Infrastructure
             await this._context.users
                 .AddAsync(user)
                 .ConfigureAwait(false);
+
+            this._context.SaveChanges();
         }
 
         public async Task<User> SearchAsyncById(UserId id)
         {
             User? user = await this._context
            .users
-           .Where(e => e.id == id)
+           .Where(e => e.userId == id)
            .Select(e => e)
            .SingleOrDefaultAsync()
            .ConfigureAwait(false);
@@ -41,11 +43,11 @@ namespace Core.Module.Users.Infrastructure
             return user;
         }
 
-        public async Task<User> SearchAsyncByEmail(UserEmail email)
+        public async Task<User> SearchAsyncByEmail(UserEmail userEmail)
         {
             User? user = await this._context
            .users
-           .Where(e => e.email == email)
+           .Where(e => e.userEmail == userEmail)
            .Select(e => e)
            .SingleOrDefaultAsync()
            .ConfigureAwait(false);

@@ -4,23 +4,23 @@ namespace Core.Module.Users.Domain
 {
     public sealed class User : AggregateRoot
     {
-        public UserId id { get;}
+        public UserId userId { get;}
         public UserName userName { get; }
-        public UserEmail email { get; }
-        public UserPassword password { get; set; }
+        public UserEmail userEmail { get; }
+        public UserPassword userPassword { get; set; }
 
-        public User(UserId userId, UserName userName, UserEmail email, UserPassword userPassword)
+        public User(UserId userId, UserName userName, UserEmail userEmail, UserPassword userPassword)
         {
-            this.id = userId;
+            this.userId = userId;
             this.userName = userName;
-            this.email = email;
-            this.password = userPassword;
+            this.userEmail = userEmail;
+            this.userPassword = userPassword;
         }
 
-        public static User Create(UserId userId, UserName userName, UserEmail email, UserPassword userPassword)
+        public static User Create(UserId userId, UserName userName, UserEmail userEmail, UserPassword userPassword)
         {
-            User user = new User(userId, userName, email, userPassword);
-            user.AddDomainEvent(new UserWasCreatedDomainEvent(userId.value.ToString(), userName.value, email.value));
+            User user = new User(userId, userName, userEmail, userPassword);
+            user.AddDomainEvent(new UserWasCreatedDomainEvent(userId.value.ToString(), userName.value, userEmail.value));
 
             return user;
         }
