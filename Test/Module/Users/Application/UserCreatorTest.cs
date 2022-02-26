@@ -4,6 +4,7 @@ using Core.Module.Users.Domain;
 using Core.Module.Users.Infrastructure;
 using System;
 using System.Threading.Tasks;
+using Test.Module.Shared.Domain;
 using Xunit;
 
 namespace Test.Module.Users.Application
@@ -20,6 +21,7 @@ namespace Test.Module.Users.Application
         public UserCreatorTest()
         {
             this.userRepository = new InMemoryUserRepository();
+            this.eventBus = new DummyEventBus();
             this.userCreatorService = new UserCreator(this.userRepository, eventBus);
         }
 

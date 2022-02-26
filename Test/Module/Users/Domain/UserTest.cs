@@ -23,6 +23,15 @@ namespace Test.Module.Users.Domain
         {
             //ULL fem servie new User, no User.Create, per evitar crear un event de domini
             return new User(new UserId("1"), new UserName("testUser"), new UserEmail(email), new UserPassword("testPassword"));
+
+            //Arrange
+            User user = new User(new UserId("1"), new UserName("testUser"), new UserEmail(email), new UserPassword("testPassword"));
+            //Act
+            this.CreateUserWithEmail("invalid@email@");
+            //Assert
+            Assert.Throws<InvalidEmailException>(() => this.CreateUserWithEmail("invalid@email@"));
+
+
         }
 
 
