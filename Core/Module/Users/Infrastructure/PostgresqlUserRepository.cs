@@ -28,7 +28,7 @@ namespace Core.Module.Users.Infrastructure
                 .AddAsync(user)
                 .ConfigureAwait(false);
 
-            //this._context.SaveChanges();
+            this._context.SaveChanges();
         }
 
         public async Task<User> SearchAsyncById(UserId id)
